@@ -35,12 +35,12 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 
     const save = totalExpenses*(savings/100);
 
-    const savingAmount =totalExpenses - save;
+    const savingAmount =save ;
     const savingAmountField  = document.getElementById('saving-amount');
     savingAmountField.innerText = savingAmount; 
 
     const remainingAmountField = document.getElementById('remaining-amount');
-    const remainAmount = totalExpenses - savingAmount;
+    const remainAmount = totalExpenses - save;
     remainingAmountField.innerText = remainAmount;
   })
 })
