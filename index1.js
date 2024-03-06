@@ -28,6 +28,8 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
   if(isNaN(foodFieldText) || isNaN(rentFieldText) || isNaN(clotheFieldText)){
     alert ('Insert Number Please')
   }
+
+
   document.getElementById('btn-save').addEventListener('click',function(){
     const savingsField = document.getElementById('savings-field');
     const savingsValueText = savingsField.value ;
